@@ -1,0 +1,11 @@
+.main {
+  &__visitors {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  &__actions {
+    margin-top: 15rem;
+  }
+}

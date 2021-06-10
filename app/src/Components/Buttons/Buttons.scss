@@ -1,0 +1,43 @@
+@import "../../sass/variables";
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  border-radius: 1rem;
+  text-transform: uppercase;
+  color: $color-dark;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  border: none;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-1rem);
+    box-shadow: 0rem 1rem 2rem rgba($color-dark, 0.2);
+  }
+
+  &:active {
+    box-shadow: 0rem 0.5rem 0.5rem rgba($color-dark, 0.2);
+    transform: translateY(-0.5rem);
+  }
+
+  &--add {
+    background-color: $color-green;
+  }
+
+  &--remove {
+    background-color: $color-dangerous;
+  }
+
+  &--manager,
+  &--home {
+    background-color: $color-dark-pink;
+    width: 30rem;
+    padding: 1rem;
+  }
+}
